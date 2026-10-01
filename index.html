@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic HTML settings -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title -->
+    <title>FoodExpress - Online Food Ordering</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION BAR
+====================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="#home" class="logo">
+
+            <span class="logo-icon">🍔</span>
+
+            <span>Food<span class="logo-highlight">Express</span></span>
+
+        </a>
+
+
+        <!-- Desktop / Mobile Navigation -->
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="#home" class="nav-link active">
+                Home
+            </a>
+
+            <a href="#menu" class="nav-link">
+                Menu
+            </a>
+
+            <a href="#categories" class="nav-link">
+                Categories
+            </a>
+
+            <a href="#about" class="nav-link">
+                About
+            </a>
+
+            <a href="#contact" class="nav-link">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- Right side buttons -->
+
+        <div class="nav-actions">
+
+            <button class="cart-button"
+                    id="cartButton">
+
+                🛒
+                <span>Cart</span>
+
+                <span class="cart-count"
+                      id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+
+            <!-- Mobile menu button -->
+
+            <button class="menu-toggle"
+                    id="menuToggle">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HOME / HERO SECTION
+====================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                🔥 Fresh & Delicious
+            </span>
+
+            <h1>
+                Delicious Food
+                <span>Delivered Fast</span>
+            </h1>
+
+            <p>
+                Order your favourite food from FoodExpress
+                and enjoy fresh, tasty and delicious meals
+                delivered right to your doorstep.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#menu"
+                   class="primary-button">
+
+                    🍴 Order Now
+
+                </a>
+
+                <a href="#about"
+                   class="secondary-button">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+
+            <!-- Small information -->
+
+            <div class="hero-info">
+
+                <div>
+                    <strong>500+</strong>
+                    <small>Food Items</small>
+                </div>
+
+                <div>
+                    <strong>10K+</strong>
+                    <small>Customers</small>
+                </div>
+
+                <div>
+                    <strong>30 Min</strong>
+                    <small>Delivery</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hero food image -->
+
+        <div class="hero-food">
+
+            <div class="food-circle">
+
+                🍕
+                🍔
+                🍟
+
+            </div>
+
+            <div class="floating-card card-one">
+
+                ⭐ 4.9 Rating
+
+            </div>
+
+            <div class="floating-card card-two">
+
+                🚴 Fast Delivery
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SEARCH SECTION
+====================================================== -->
+
+<section class="search-section">
+
+    <div class="search-container">
+
+        <div>
+
+            <span class="search-small">
+                WHAT ARE YOU CRAVING?
+            </span>
+
+            <h2>
+                Find Your Favourite Food
+            </h2>
+
+        </div>
+
+
+        <div class="search-box">
+
+            <span>🔍</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search pizza, burger, biryani..."
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CATEGORIES
+====================================================== -->
+
+<section class="categories section"
+         id="categories">
+
+    <div class="section-heading">
+
+        <span>
+            EXPLORE FOOD
+        </span>
+
+        <h2>
+            Browse By Category
+        </h2>
+
+        <p>
+            Choose your favourite food category.
+        </p>
+
+    </div>
+
+
+    <div class="category-container">
+
+        <button class="category-card active-category"
+                data-category="all">
+
+            <span>🍽️</span>
+
+            <strong>All</strong>
+
+            <small>All Food</small>
+
+        </button>
+
+
+        <button class="category-card"
+                data-category="pizza">
+
+            <span>🍕</span>
+
+            <strong>Pizza</strong>
+
+            <small>Cheesy Pizza</small>
+
+        </button>
+
+
+        <button class="category-card"
+                data-category="burger">
+
+            <span>🍔</span>
+
+            <strong>Burger</strong>
+
+            <small>Juicy Burger</small>
+
+        </button>
+
+
+        <button class="category-card"
+                data-category="biryani">
+
+            <span>🍛</span>
+
+            <strong>Biryani</strong>
+
+            <small>Indian Taste</small>
+
+        </button>
+
+
+        <button class="category-card"
+                data-category="dessert">
+
+            <span>🍰</span>
+
+            <strong>Dessert</strong>
+
+            <small>Sweet Food</small>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOD MENU
+====================================================== -->
+
+<section class="menu-section section"
+         id="menu">
+
+    <div class="section-heading">
+
+        <span>
+            OUR SPECIAL MENU
+        </span>
+
+        <h2>
+            Popular Dishes
+        </h2>
+
+        <p>
+            Freshly prepared food made with love.
+        </p>
+
+    </div>
+
+
+    <!-- Food cards -->
+
+    <div class="food-container"
+         id="foodContainer">
+
+
+        <!-- FOOD 1 -->
+
+        <div class="food-card"
+             data-category="pizza"
+             data-name="Margherita Pizza"
+             data-price="199">
+
+            <div class="food-image pizza-bg">
+
+                <span>🍕</span>
+
+                <div class="food-badge">
+                    Popular
+                </div>
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-rating">
+                    ⭐ 4.8
+                </div>
+
+                <h3>
+                    Margherita Pizza
+                </h3>
+
+                <p>
+                    Fresh cheese, tomato sauce
+                    and delicious herbs.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹199
+                    </strong>
+
+                    <button
+                        class="add-button"
+                        data-name="Margherita Pizza"
+                        data-price="199">
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 2 -->
+
+        <div class="food-card"
+             data-category="burger"
+             data-name="Cheese Burger"
+             data-price="149">
+
+            <div class="food-image burger-bg">
+
+                <span>🍔</span>
+
+                <div class="food-badge">
+                    Bestseller
+                </div>
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-rating">
+                    ⭐ 4.9
+                </div>
+
+                <h3>
+                    Cheese Burger
+                </h3>
+
+                <p>
+                    Juicy patty with cheese,
+                    lettuce and special sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹149
+                    </strong>
+
+                    <button
+                        class="add-button"
+                        data-name="Cheese Burger"
+                        data-price="149">
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 3 -->
+
+        <div class="food-card"
+             data-category="biryani"
+             data-name="Chicken Biryani"
+             data-price="249">
+
+            <div class="food-image biryani-bg">
+
+                <span>🍛</span>
+
+                <div class="food-badge">
+                    Special
+                </div>
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-rating">
+                    ⭐ 4.7
+                </div>
+
+                <h3>
+                    Chicken Biryani
+                </h3>
+
+                <p>
+                    Aromatic basmati rice with
+                    delicious spices and chicken.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹249
+                    </strong>
+
+                    <button
+                        class="add-button"
+                        data-name="Chicken Biryani"
+                        data-price="249">
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 4 -->
+
+        <div class="food-card"
+             data-category="pizza"
+             data-name="Farmhouse Pizza"
+             data-price="249">
+
+            <div class="food-image pizza2-bg">
+
+                <span>🍕</span>
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-rating">
+                    ⭐ 4.6
+                </div>
+
+                <h3>
+                    Farmhouse Pizza
+                </h3>
+
+                <p>
+                    Loaded with fresh vegetables,
+                    cheese and herbs.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹249
+                    </strong>
+
+                    <button
+                        class="add-button"
+                        data-name="Farmhouse Pizza"
+                        data-price="249">
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 5 -->
+
+        <div class="food-card"
+             data-category="burger"
+             data-name="Classic Burger"
+             data-price="129">
+
+            <div class="food-image burger2-bg">
+
+                <span>🍔</span>
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-rating">
+                    ⭐ 4.5
+                </div>
+
+                <h3>
+                    Classic Burger
+                </h3>
+
+                <p>
+                    Crispy vegetables and juicy
+                    patty with special sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹129
+                    </strong>
+
+                    <button
+                        class="add-button"
+                        data-name="Classic Burger"
+                        data-price="129">
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 6 -->
+
+        <div class="food-card"
+             data-category="biryani"
+             data-name="Veg Biryani"
+             data-price="179">
+
+            <div class="food-image biryani2-bg">
+
+                <span>🍛</span>
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-rating">
+                    ⭐ 4.6
+                </div>
+
+                <h3>
+                    Veg Biryani
+                </h3>
+
+                <p>
+                    Fragrant rice cooked with
+                    fresh vegetables and spices.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹179
+                    </strong>
+
+                    <button
+                        class="add-button"
+                        data-name="Veg Biryani"
+                        data-price="179">
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 7 -->
+
+        <div class="food-card"
+             data-category="dessert"
+             data-name="Chocolate Cake"
+             data-price="129">
+
+            <div class="food-image dessert-bg">
+
+                <span>🍰</span>
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-rating">
+                    ⭐ 4.8
+                </div>
+
+                <h3>
+                    Chocolate Cake
+                </h3>
+
+                <p>
+                    Soft and delicious chocolate
+                    cake with creamy topping.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹129
+                    </strong>
+
+                    <button
+                        class="add-button"
+                        data-name="Chocolate Cake"
+                        data-price="129">
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 8 -->
+
+        <div class="food-card"
+             data-category="dessert"
+             data-name="Ice Cream"
+             data-price="99">
+
+            <div class="food-image icecream-bg">
+
+                <span>🍨</span>
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-rating">
+                    ⭐ 4.7
+                </div>
+
+                <h3>
+                    Ice Cream
+                </h3>
+
+                <p>
+                    Creamy vanilla ice cream
+                    with delicious toppings.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹99
+                    </strong>
+
+                    <button
+                        class="add-button"
+                        data-name="Ice Cream"
+                        data-price="99">
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+    all about section
+====================================================== -->
+
+<section class="about-section section"
+         id="about">
+
+    <div class="about-container">
+
+        <div class="about-image">
+
+            🍔
+            🍕
+            🍟
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span>
+                ABOUT FOOD EXPRESS
+            </span>
+
+            <h2>
+                We Make Food
+                <strong>More Delicious</strong>
+            </h2>
+
+            <p>
+                FoodExpress is a sample online food ordering
+                platform created using HTML, CSS and JavaScript.
+            </p>
+
+            <p>
+                This project demonstrates an interactive
+                navigation menu, responsive design, food
+                filtering and shopping cart functionality.
+            </p>
+
+
+            <div class="about-features">
+
+                <div>
+                    <span>✓</span>
+                    Fresh Ingredients
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Fast Delivery
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Easy Ordering
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Best Quality
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     contact details all
+====================================================== -->
+
+<section class="contact-section section"
+         id="contact">
+
+    <div class="section-heading">
+
+        <span>
+            CONTACT US
+        </span>
+
+        <h2>
+            Have Questions?
+        </h2>
+
+        <p>
+            We would love to hear from you.
+        </p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <div class="contact-item">
+
+                <span>📍</span>
+
+                <div>
+                    <strong>Address</strong>
+                    <p>Jaysingpur, Maharashtra</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>📞</span>
+
+                <div>
+                    <strong>Phone</strong>
+                    <p>+91 98765 43210</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>📧</span>
+
+                <div>
+                    <strong>Email</strong>
+                    <p>foodexpress@example.com</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form"
+              id="contactForm">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="customerEmail"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="customerMessage"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message 🚀
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>
+                🍔 FoodExpress
+            </h3>
+
+            <p>
+                Delicious food delivered to your doorstep.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="#home">Home</a>
+
+            <a href="#menu">Menu</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Follow Us
+            </h4>
+
+            <div class="social-icons">
+
+                <span>📘</span>
+                <span>📸</span>
+                <span>🐦</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 FoodExpress | Prodigy InfoTech Web Development Internship
+
+    </div>
+
+</footer>
+<div class="cart-overlay"
+     id="cartOverlay">
+</div>
+
+
+<aside class="cart-sidebar"
+       id="cartSidebar">
+
+    <div class="cart-header">
+
+        <h2>
+            🛒 Your Cart
+        </h2>
+
+        <button id="closeCart">
+            ✕
+        </button>
+
+    </div>
+
+
+    <div class="cart-items"
+         id="cartItems">
+
+        <div class="empty-cart">
+
+            🛒
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Add delicious food to your cart.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <button class="checkout-button"
+                id="checkoutButton">
+
+            Place Order 🍴
+
+        </button>
+
+    </div>
+
+</aside>
+<div class="modal"
+     id="successModal">
+
+    <div class="modal-content">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h2>
+            Order Placed!
+        </h2>
+
+        <p>
+            Thank you for ordering from FoodExpress.
+        </p>
+
+        <button id="closeModal">
+            Continue Shopping
+        </button>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
